@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="170dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/game_default_image" />
+
+    <TextView
+        android:id="@+id/detail_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/detail_image"
+        android:layout_below="@id/detail_image"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="description"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/detail_image"
+        android:layout_below="@id/detail_desc"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/detail_newPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="description"
+                android:textColor="@android:color/holo_red_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原￥"
+                android:textColor="@android:color/white"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/detail_oldPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="origin_price"
+                android:textColor="@android:color/white"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="销量:"
+                android:textColor="@android:color/white"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/detail_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sales"
+                android:textColor="@android:color/white"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
